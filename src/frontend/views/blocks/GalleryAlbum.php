@@ -10,7 +10,7 @@ use luya\admin\filters\MediumThumbnail;
 <p><?= $album->description; ?></p>
     <?php if ($album->cover_image_id): ?>
     <p>
-        <a href="<?= $album->detailLink(); ?>">
+        <a href="<?= $album->detailLink; ?>">
             <img class="img-responsive img-rounded" src="<?= Yii::$app->storage->getImage($album->cover_image_id)->applyFilter(MediumThumbnail::identifier())->source; ?>" border="0" />
         </a>
     <?php endif; ?>
