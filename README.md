@@ -93,7 +93,7 @@ As the modules are not shipped with default view files you can use the following
         <div class="row">
             <?php foreach($model->albumImages as $image): ?>
                 <div class="col-md-3">
-                    <img class="img-responsive" src="<?= $image->source; ?>" border="0" />
+                    <img class="img-responsive" src="<?= $image->getImage()->source; ?>" border="0" />
                 </div>
             <?php endforeach; ?>
         </div>
